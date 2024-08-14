@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title>帮助中心</title>
+		<link href="https://cdn.bootcdn.net/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css" rel="stylesheet">
+		<link href="./assets/main.css" rel="stylesheet">
+		<style>*{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style>
+	</head>
+	<body class="bg-light">
+		<div class="bg-primary pt-3 px-4" style="padding-bottom:4rem;">
+			<div>
+				<span class="text-white" style="font-size:1.4rem;">帮助中心</span>
+				<span class="text-white" style="font-size:1rem;"> / Help</span>
+			</div>
+			<span class="text-white" style="font-size:1rem;">先看看有没有你遇到的问题吧！</span>
+		</div>
+		<div class="px-3">
+			<div class="card bg-white" style="margin-top:-3rem;">
+				<div class="mx-3 mt-3">常见问题</div>
+				<div class="d-flex flex-wrap px-1">
+					<a href="./list.html?type=问题-登录" target="_blank" class="d-flex flex-row align-items-center p-3 text-black text-decoration-none" style="width:calc(50% - 2rem);">
+						<img style="width:2.4rem;height:2.4rem;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjI0IiBjeT0iMTEiIHI9IjciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJlZDU3MyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz48cGF0aCBkPSJNNCA0MUM0IDMyLjE2MzQgMTIuMDU4OSAyNSAyMiAyNSIgc3Ryb2tlPSIjMmVkNTczIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJiZXZlbCIvPjxwYXRoIGQ9Ik0yOCAyOS4yQzI4IDI4LjEzMzMgMzUgMjYgMzUgMjZDMzUgMjYgNDIgMjguMTMzMyA0MiAyOS4yQzQyIDM3LjczMzMgMzUgNDIgMzUgNDJDMzUgNDIgMjggMzcuNzMzMyAyOCAyOS4yWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmVkNTczIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJiZXZlbCIvPjwvc3ZnPg=="/>
+						<span style="margin-left:.4rem;">登录问题<br><span class="text-muted" style="font-size:.6rem;">受限、冻结等</span></span>
+					</a>
+					<a href="./list.html?type=问题-支付" class="d-flex flex-row align-items-center p-3 text-black text-decoration-none" style="width:calc(50% - 2rem);">
+						<img style="width:2.4rem;height:2.4rem;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02IDE1TDE5LjM3MTQgMjUuNTM3N0MyMC41IDI2LjUgMjIuODI4MiAyOCAyNSAyNkMyNy4yODkzIDIzLjg5MTggMjUuNSAyMS41IDI1IDIxTDE3IDE1IiBzdHJva2U9IiMyZWQ1NzMiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49ImJldmVsIi8+PHBhdGggZD0iTTQgOEgyN0wzOCAxOCIgc3Ryb2tlPSIjMmVkNTczIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJiZXZlbCIvPjxwYXRoIGQ9Ik05IDMzTDQ0IDMzLjAxOTMiIHN0cm9rZT0iIzJlZDU3MyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz48cGF0aCBkPSJNOSAxOFY0MEg0NFYxOEgyMi4wMDAyIiBzdHJva2U9IiMyZWQ1NzMiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49ImJldmVsIi8+PC9zdmc+"/>
+						<span style="margin-left:.4rem;">支付问题<br><span class="text-muted" style="font-size:.6rem;">无法支付或受限</span></span>
+					</a>
+					<a href="./list.html?type=问题-实名" class="d-flex flex-row align-items-center p-3 text-black text-decoration-none" style="width:calc(50% - 2rem);">
+						<img style="width:2.4rem;height:2.4rem;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMyA0MEw5IDQwQzcuODk1NDMgNDAgNyAzOS4xMDQ2IDcgMzhMNyA2QzcgNC44OTU0MyA3Ljg5NTQzIDQgOSA0TDI5IDRDMzAuMTA0NiA0IDMxIDQuODk1NDMgMzEgNkwzMSAxMCIgc3Ryb2tlPSIjMmVkNTczIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxyZWN0IHg9IjEzIiB5PSI0NCIgd2lkdGg9IjM0IiBoZWlnaHQ9IjI4IiByeD0iMiIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDEzIDQ0KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmVkNTczIiBzdHJva2Utd2lkdGg9IjMiLz48Y2lyY2xlIGN4PSIyNyIgY3k9IjI3IiByPSI4IiBzdHJva2U9IiMyZWQ1NzMiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0zNC45OTk4IDI4QzM0Ljk5OTggMjggMzIgMjcuNSAyOS45OTk1IDI5QzI3Ljk5OSAzMC41IDI3LjQwMSAzNC4xMDI1IDI3Ljk5OTkgMzUiIHN0cm9rZT0iIzJlZDU3MyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQgMjdDMjQgMjkgMjIgMzEgMjAgMzEiIHN0cm9rZT0iIzJlZDU3MyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMzEgMjBDMzEgMjAgMzEgMjQgMjggMjQiIHN0cm9rZT0iIzJlZDU3MyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4="/>
+						<span style="margin-left:.4rem;">实名问题<br><span class="text-muted" style="font-size:.6rem;">实名遇到问题</span></span>
+					</a>
+					<a href="./list.html?type=问题-券票" class="d-flex flex-row align-items-center p-3 text-black text-decoration-none" style="width:calc(50% - 2rem);">
+						<img style="width:2.4rem;height:2.4rem;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05LjAwMDEzIDE2LjAwMDFMMzQgNi4wMDAwOEwzOC4wMDA0IDE2LjAwMDEiIHN0cm9rZT0iIzJlZDU3MyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz48cGF0aCBkPSJNNCAxNkg0NFYyMkM0MSAyMiAzOCAyNCAzOCAyNy41QzM4IDMxIDQxIDM0IDQ0IDM0VjQwSDRWMzRDNy4wMDAxNiAzNCAxMCAzMiAxMCAyOEMxMCAyNCA3IDIyIDQgMjJWMTZaIiBmaWxsPSJub25lIiBzdHJva2U9IiMyZWQ1NzMiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49ImJldmVsIi8+PHBhdGggZD0iTTE3IDI1LjM4NDhIMjMiIHN0cm9rZT0iIzJlZDU3MyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMTcgMzEuMzg0OEgzMSIgc3Ryb2tlPSIjMmVkNTczIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPg=="/>
+						<span style="margin-left:.4rem;">券票问题<br><span class="text-muted" style="font-size:.6rem;">优惠、券票等</span></span>
+					</a>
+					<a href="./list.html?type=问题-代币" class="d-flex flex-row align-items-center p-3 text-black text-decoration-none" style="width:calc(50% - 2rem);">
+						<img style="width:2.4rem;height:2.4rem;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yNCA0NEMzNS4wNDU3IDQ0IDQ0IDM1LjA0NTcgNDQgMjRDNDQgMTIuOTU0MyAzNS4wNDU3IDQgMjQgNEMxMi45NTQzIDQgNCAxMi45NTQzIDQgMjRDNCAzNS4wNDU3IDEyLjk1NDMgNDQgMjQgNDRaIiBmaWxsPSJub25lIiBzdHJva2U9IiMyZWQ1NzMiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJiZXZlbCIvPjxyZWN0IHg9IjI0IiB5PSIxNi45Mjg3IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHJ4PSIyIiB0cmFuc2Zvcm09InJvdGF0ZSg0NSAyNCAxNi45Mjg3KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmVkNTczIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz48L3N2Zz4="/>
+						<span style="margin-left:.4rem;">代币问题<br><span class="text-muted" style="font-size:.6rem;">充值不到账</span></span>
+					</a>
+					<a href="./list.html?type=问题-积分" class="d-flex flex-row align-items-center p-3 text-black text-decoration-none" style="width:calc(50% - 2rem);">
+						<img style="width:2.4rem;height:2.4rem;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxlbGxpcHNlIGN4PSIxNCIgY3k9IjEwIiByeD0iMTAiIHJ5PSI1IiBzdHJva2U9IiMyZWQ1NzMiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49ImJldmVsIi8+PHBhdGggZD0iTTQgMTBDNCAxMCA0IDE0LjIzODYgNCAxN0M0IDE5Ljc2MTQgOC40NzcxNSAyMiAxNCAyMkMxOS41MjI4IDIyIDI0IDE5Ljc2MTQgMjQgMTdDMjQgMTUuMzY0NCAyNCAxMCAyNCAxMCIgc3Ryb2tlPSIjMmVkNTczIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJiZXZlbCIvPjxwYXRoIGQ9Ik00IDE3QzQgMTcgNCAyMS4yMzg2IDQgMjRDNCAyNi43NjE0IDguNDc3MTUgMjkgMTQgMjlDMTkuNTIyOCAyOSAyNCAyNi43NjE0IDI0IDI0QzI0IDIyLjM2NDQgMjQgMTcgMjQgMTciIHN0cm9rZT0iIzJlZDU3MyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz48cGF0aCBkPSJNNCAyNEM0IDI0IDQgMjguMjM4NiA0IDMxQzQgMzMuNzYxNCA4LjQ3NzE1IDM2IDE0IDM2QzE5LjUyMjggMzYgMjQgMzMuNzYxNCAyNCAzMUMyNCAyOS4zNjQ0IDI0IDI0IDI0IDI0IiBzdHJva2U9IiMyZWQ1NzMiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49ImJldmVsIi8+PHBhdGggZD0iTTQgMzFDNCAzMSA0IDM1LjIzODYgNCAzOEM0IDQwLjc2MTQgOC40NzcxNSA0MyAxNCA0M0MxOS41MjI4IDQzIDI0IDQwLjc2MTQgMjQgMzhDMjQgMzYuMzY0NCAyNCAzMSAyNCAzMSIgc3Ryb2tlPSIjMmVkNTczIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJiZXZlbCIvPjxlbGxpcHNlIGN4PSIzNCIgY3k9IjI0IiByeD0iMTAiIHJ5PSI1IiBzdHJva2U9IiMyZWQ1NzMiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49ImJldmVsIi8+PHBhdGggZD0iTTI0IDI0QzI0IDI0IDI0IDI4LjIzODYgMjQgMzFDMjQgMzMuNzYxNCAyOC40NzcyIDM2IDM0IDM2QzM5LjUyMjggMzYgNDQgMzMuNzYxNCA0NCAzMUM0NCAyOS4zNjQ0IDQ0IDI0IDQ0IDI0IiBzdHJva2U9IiMyZWQ1NzMiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49ImJldmVsIi8+PHBhdGggZD0iTTI0IDMxQzI0IDMxIDI0IDM1LjIzODYgMjQgMzhDMjQgNDAuNzYxNCAyOC40NzcyIDQzIDM0IDQzQzM5LjUyMjggNDMgNDQgNDAuNzYxNCA0NCAzOEM0NCAzNi4zNjQ0IDQ0IDMxIDQ0IDMxIiBzdHJva2U9IiMyZWQ1NzMiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49ImJldmVsIi8+PC9zdmc+"/>
+						<span style="margin-left:.4rem;">积分问题<br><span class="text-muted" style="font-size:.6rem;">兑换、消费等</span></span>
+					</a>
+					<a href="./list.html?type=问题-功能" class="d-flex flex-row align-items-center p-3 text-black text-decoration-none" style="width:calc(50% - 2rem);">
+						<img style="width:2.4rem;height:2.4rem;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yNCAyN0wxNCAyMUw0IDI3VjM5TDE0IDQ1TDI0IDM5VjI3WiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmVkNTczIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJiZXZlbCIvPjxwYXRoIGQ9Ik00NCAyN0wzNCAyMUwyNCAyN1YzOUwzNCA0NUw0NCAzOVYyN1oiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJlZDU3MyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz48cGF0aCBkPSJNMzQgOUwyNCAzTDE0IDlWMjFMMjQgMjdMMzQgMjFWOVoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJlZDU3MyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz48L3N2Zz4="/>
+						<span style="margin-left:.4rem;">功能异常<br><span class="text-muted" style="font-size:.6rem;">错位、闪退等</span></span>
+					</a>
+				</div>
+			</div>
+			<a href="//a.funts.site/help-online" target="_blank" class="card text-black text-decoration-none bg-white mt-3">
+				<div class="card-body">
+					<p style="font-size:1.125rem;">没有我的问题?</p>
+					<span style="font-size:.8rem;">点击此处联系人工客服小伙伴在线解决！</span>
+				</div>
+			</a>
+		</div>
+		<div class="container py-5 text-center" style="font-size:.8rem;line-height:1.2">
+			<p class="mb-2 text-muted">"Funts"("趣箱") 受到香港法律管辖</p>
+			<p class="mb-2 text-muted">"Funts" is governed by the laws of Hong Kong, China</p>
+			<p class="mb-2 text-muted"><br>Copyright © 2024 Funts Ltd.</p>
+		</div>
+	</body>
+</html>

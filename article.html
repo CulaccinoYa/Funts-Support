@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title>帮助中心</title>
+		<link href="https://cdn.bootcdn.net/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css" rel="stylesheet">
+		<link href="./assets/main.css" rel="stylesheet">
+		<style>*{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style>
+	</head>
+	<body class="bg-light">
+		<div class="p-4 bg-white">
+			<p style="font-size:1.2rem;" id="title"></p>
+			<span class="text-muted" id="time"></span>
+			<div class="mt-3" id="body"></div>
+		</div>
+		<div class="container py-5 text-center" style="font-size:.8rem;line-height:1.2">
+			<p class="mb-2 text-muted">"Funts"("趣箱") 受到香港法律管辖</p>
+			<p class="mb-2 text-muted">"Funts" is governed by the laws of Hong Kong, China</p>
+			<p class="mb-2 text-muted"><br>Copyright © 2024 Funts Ltd.</p>
+		</div>
+	</body>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js"></script>
+	<script>
+		document.onreadystatechange=function(){if(document.readyState=='complete'){
+			let loading=$.alert({title:'',content:'操作正在处理',buttons:[],closeIcon:false});
+			$.ajax({
+				url:"https://article.funts.site/article?id="+getvalue('id'),
+				method:"GET",
+				timeout:2000,
+				dataType:"JSON",
+				success(i) {
+					loading.close();
+					if(i.code!==200){
+						$.alert({title:'',type:'red',content:i.msg,buttons:[],closeIcon:false}); 
+						return;
+					}
+					let data=i.data
+					$('#title').text(data.title)
+					$('#time').text(data.time)
+					$('#body').html(data.body)
+				},error() {
+					loading.close();
+					$.alert({title:'',type:'red',content:'获取数据失败，请稍后再试',buttons:[],closeIcon:false});
+				}
+			})
+		}}
+		function getvalue(variable) {
+			var query = window.location.search.substring(1);
+			var vars = query.split("&");
+			for (var i = 0; i < vars.length; i++) {
+				var pair = vars[i].split("=");
+				if (pair[0] == variable) {
+					return pair[1]
+				}
+			}
+			return (false)
+		}
+	</script>
+</html>
