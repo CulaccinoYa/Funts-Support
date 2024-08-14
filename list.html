@@ -41,7 +41,7 @@
 					}
 					let data=i.data
 					for(var n=0;n<data.length;n++){
-						$('#list').append('<a href="./article?id='+data[n].id+'" class="card bg-white text-black text-decoration-none p-3 mb-2">'+data[n].title+'</a>')
+						$('#list').append('<a href="./article.html?id='+data[n].id+'" class="card bg-white text-black text-decoration-none p-3 mb-2">'+data[n].title+'</a>')
 					}
 				},error() {
 					loading.close();
