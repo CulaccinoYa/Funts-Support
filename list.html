@@ -11,7 +11,7 @@
 	</head>
 	<body class="bg-light">
 		<div class="p-3" id="list"></div>
-		<a href="//a.funts.site/help-online" target="_blank" class="card text-black text-decoration-none bg-white m-3">
+		<a href="//a.funts.site/help-online" class="card text-black text-decoration-none bg-white m-3">
 			<div class="card-body">
 				<p style="font-size:1.125rem;">没有我的问题?</p>
 				<span style="font-size:.8rem;">点击此处联系人工客服小伙伴在线解决！</span>
@@ -41,7 +41,7 @@
 					}
 					let data=i.data
 					for(var n=0;n<data.length;n++){
-						$('#list').append('<a href="./article?id='+data[n].id+'" target="_blank" class="card bg-white text-black text-decoration-none p-3 mb-2">'+data[n].title+'</a>')
+						$('#list').append('<a href="./article?id='+data[n].id+'" class="card bg-white text-black text-decoration-none p-3 mb-2">'+data[n].title+'</a>')
 					}
 				},error() {
 					loading.close();
